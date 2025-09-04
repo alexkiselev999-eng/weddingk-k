@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Лендинг по шаблону</title>
+  <meta name="description" content="Одностраничный сайт по вашему шаблону.">
+  <link rel="preload" as="image" href="assets/img/img_1.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav">
+      <div class="logo">Ваш бренд</div>
+      <nav class="menu">
+        <a href="#about">О нас</a>
+        <a href="#features">Преимущества</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <section class="hero" style="background-image: url(assets/img/img_1.png);">
+    <div class="container hero-inner">
+      <h1>Заголовок вашего предложения</h1>
+      <p>Короткий подзаголовок с ключевой выгодой для клиента.</p>
+      <a href="#contact" class="btn">Оставить заявку</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2>О проекте</h2>
+      <p>Этот лендинг собран по вашему шаблону. Тексты и изображения можно заменить на ваши. Дизайн адаптивный — корректно отображается на телефонах, планшетах и десктопах.</p>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Почему мы</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Пункт 1</h3>
+          <p>Короткое описание преимущества или услуги.</p>
+        </div>
+        <div class="card">
+          <h3>Пункт 2</h3>
+          <p>Ещё один сильный аргумент для клиента.</p>
+        </div>
+        <div class="card">
+          <h3>Пункт 3</h3>
+          <p>Опишите отличительную особенность.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2>Галерея</h2>
+      <div class="gallery-grid">
+            <figure class="gallery-item"><img src="assets/img/img_1.png" alt="Gallery image 1"><figcaption></figcaption></figure>
+            <figure class="gallery-item"><img src="assets/img/img_2.png" alt="Gallery image 2"><figcaption></figcaption></figure>
+            <figure class="gallery-item"><img src="assets/img/img_3.png" alt="Gallery image 3"><figcaption></figcaption></figure>
+            <figure class="gallery-item"><img src="assets/img/img_4.png" alt="Gallery image 4"><figcaption></figcaption></figure>
+            <figure class="gallery-item"><img src="assets/img/img_5.png" alt="Gallery image 5"><figcaption></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Оставьте заявку</h2>
+      <form id="contactForm" action="https://formspree.io/f/FORM_ID_HERE" method="POST" class="form">
+        <div class="form-row">
+          <label>Ваше имя
+            <input type="text" name="name" placeholder="Иван" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Сообщение
+            <textarea name="message" placeholder="Ваш комментарий..." rows="4" required></textarea>
+          </label>
+        </div>
+        <input type="hidden" name="_subject" value="Новая заявка с лендинга">
+        <div class="form-row inline">
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required> Я согласен(на) с политикой конфиденциальности
+          </label>
+        </div>
+        <button type="submit" class="btn">Отправить</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="privacy-note">Нажимая кнопку, вы соглашаетесь с <a href="#privacy">политикой конфиденциальности</a>.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© sandbox — Ваш бренд</p>
+      <a href="#top" class="to-top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
